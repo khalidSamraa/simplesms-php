@@ -14,25 +14,25 @@ composer.phar install simplesms
 
 ## Usage
 
-Initialization
+### Initialization
 
 `
 $simplesms = new SimpleSms\SimpleSms('api_access_key', 'api_secret_key');
 `
 
-Sandbox
+### Sandbox/Development Mode
 
 ```php
 $simplesms->development = TRUE; //default FALSE
 ```
 
-Check Balance
+### Check Balance
 
 ```php
 $balance = simplesms->getBalance();
 ```
 
-Send Single SMS
+### Send Single SMS
 
 ```php
 $msisdn = '085862011111';
@@ -40,7 +40,7 @@ $text = 'Hello, World';
 simplesms->send($msisdn, $text);
 ```
 
-Send Multiple SMS
+### Send Multiple SMS
 
 ```php
 $recipients = array('msisdn1', 'msisdn2', 'msisdn3', 'msisdn4');
