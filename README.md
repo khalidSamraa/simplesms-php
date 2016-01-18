@@ -16,9 +16,9 @@ composer.phar install simplesms
 
 ### Initialization
 
-`
+```php
 $simplesms = new SimpleSms\SimpleSms('api_access_key', 'api_secret_key');
-`
+```
 
 ### Sandbox/Development Mode
 
