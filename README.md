@@ -93,6 +93,7 @@ $simplesms->broadcast($recipients, $text, $sender_id);
 
 * [API v1 Documentation](https://docs.simplesms.id)
 * [Questions & Answers](https://ask.simplesms.id)
+* [Blogs](https://blog.simplesms.id)
 
 
 
