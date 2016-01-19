@@ -7,7 +7,7 @@ https://simplesms.id
 Installation using Composer
 
 `
-composer.phar install simplesms
+composer require simplesms/simplesms
 `
 
 
