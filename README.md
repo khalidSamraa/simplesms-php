@@ -96,7 +96,9 @@ $simplesms->broadcast($recipients, $text, $sender_id);
 * [Blogs](https://blog.simplesms.id)
 
 
+## License
 
+MIT
 
 
 
