@@ -2,6 +2,8 @@
 
 namespace SimpleSMS;
 
+require_once 'exceptions.php';
+
 class SimpleSMS
 {
     public $development_mode    = FALSE;
