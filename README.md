@@ -1,7 +1,6 @@
-# simplesms-php
-SimpleSMS API Client for PHP5
+# SimpleSMS API Client for PHP
 
-https://simplesms.id/sdk
+https://simplesms.id
 
 ## Getting Started
 
@@ -29,7 +28,7 @@ $simplesms->development = TRUE; //default FALSE
 ### Check Balance
 
 ```php
-$balance = simplesms->getBalance();
+$balance = $simplesms->getBalance();
 ```
 
 ### Send Single SMS
@@ -37,18 +36,18 @@ $balance = simplesms->getBalance();
 ```php
 $msisdn = '085862011111';
 $text = 'Hello, World';
-simplesms->send($msisdn, $text);
+$simplesms->send($msisdn, $text);
 ```
 
-### Send Multiple SMS
+### Send Broadcast SMS
 
 ```php
 $recipients = array('msisdn1', 'msisdn2', 'msisdn3', 'msisdn4');
 $text = 'This is multi sms text';
-$simplesms->sendArray($recipients, $text);
+$simplesms->broadcast($recipients, $text);
 ```
 
-Resources
+## Resources
 
 * APIv1 Documentation
 * Ask
