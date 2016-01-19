@@ -85,7 +85,7 @@ Using Masking ID (Alphanumeric) as sender
 ```php
 $recipients = array('msisdn1', 'msisdn2', 'msisdn3', 'msisdn4');
 $text = 'This is broadcast message';
-$sender_id = 'Kominfo';
+$sender_id = 'Sandiloka';
 $simplesms->broadcast($recipients, $text, $sender_id);
 ```
 
