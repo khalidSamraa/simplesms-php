@@ -1,0 +1,7 @@
+{
+    "name": "simplesms/simplesms",
+    "description": "SimpleSMS API Client for PHP",
+    "require": {
+        "php": ">=5.3.0"        
+    }
+}
