@@ -91,8 +91,8 @@ $simplesms->broadcast($recipients, $text, $sender_id);
 
 ## Resources
 
-* APIv1 Documentation
-* Ask
+* [API v1 Documentation](https://docs.simplesms.id)
+* [Questions & Answers](https://ask.simplesms.id)
 
 
 
