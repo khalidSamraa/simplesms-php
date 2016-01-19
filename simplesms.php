@@ -10,6 +10,7 @@ class SimpleSMS
     public $access_key          = "";
     public $secret_key          = "";
     public $session             = null;
+    public $sender_id           = "";
 
     function __construct($access_key = "", $secret_key = "")
     {
@@ -129,7 +130,7 @@ class SimpleSMS
 
     public function send($msisdn, $text)
     {
-        $params = array('msisdn' => $msisdn, 'text' => $text);
+        $params = array('msisdn' => $msisdn, 'text' => $text, 'senderid' => $this->sender_id);
         $url = $this->base_url().'/send';
         $response = $this->_post($url, $params);
         $data = $this->parseResponse($response);
@@ -138,7 +139,7 @@ class SimpleSMS
 
     public function broadcast($recipients, $text)
     {
-        $params = array('recipients' => $recipients, 'text' => $text);
+        $params = array('recipients' => $recipients, 'text' => $text, 'senderid' => $this->sender_id);
         $url = $this->base_url().'/broadcast';
         $response = $this->_post($url, $params);
         $data = $this->parseResponse($response);
